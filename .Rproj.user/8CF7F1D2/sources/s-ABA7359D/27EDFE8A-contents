@@ -1,0 +1,19 @@
+customer_data=read.csv("D:/ProjectR/customer-segmentation-dataset/Mall_Customers.csv")
+str(customer_data)
+fviz_nbclust(customer_data[,3:5], kmeans, method = "wss")
+fviz_nbclust(customer_data[,3:5], kmeans, method = "silhouette")
+fviz_nbclust(customer_data[,3:5], kmeans, method = "gap_stat")
+
+iss <- function(k) {
+  kmeans(customer_data[,3:5],k,iter.max=100,nstart=100,algorithm="Lloyd" )$tot.withinss
+}
+k.values <- 1:7
+iss_values <- map_dbl(k.values, iss)
+plot(k.values, iss_values,
+     type="b", pch = 19, frame = FALSE, 
+     xlab="Number of clusters K",
+     ylab="Total intra-clusters sum of squares")
+
+customer_data[,3:5]
+
+kmeans(customer_data[,3:5])

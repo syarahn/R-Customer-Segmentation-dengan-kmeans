@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1591933281309.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "55515D3B",
+    "lastKnownWriteTime" : 1592042715,
+    "last_content_update" : 1592042715656,
+    "path" : "D:/ProjectR/Customer Segmentation/customer segmentation.R",
+    "project_path" : "customer segmentation.R",
+    "properties" : {
+        "cursorPosition" : "142,78",
+        "scrollLine" : "128",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
